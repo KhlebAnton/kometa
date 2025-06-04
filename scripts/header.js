@@ -42,7 +42,7 @@ openModalButtons.forEach(button => {
         e.preventDefault();
         modal.classList.add('open');
        
-        toggleScroll(true)
+        toggleScroll(false)
     });
 });
 
