@@ -451,6 +451,10 @@ const orderMobileTopItems = document.querySelectorAll('.order_mobile_top');
 
 orderMobileTopItems.forEach(item => {
     item.addEventListener('click', () => {
+        window.scrollTo({
+            top: 50,
+            behavior: 'smooth'
+        });
         if (item.classList.contains('open')) {
             item.classList.remove('open');
         } else {
@@ -473,6 +477,10 @@ function closeOrderOptions() {
 
 let indexTab = 0;
 function nextTab() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
     if (indexTab < orderTabs.length - 1) {
         orderTabs[indexTab].classList.add('open')
         orderTabs[indexTab].classList.remove('active');
