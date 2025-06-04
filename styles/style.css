@@ -3008,6 +3008,9 @@ a.btn_primary {
     .map_container {
         height: 280px;
     }
+    .reviews__item p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 600px) {
