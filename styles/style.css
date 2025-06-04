@@ -3011,6 +3011,7 @@ a.btn_primary {
     }
     .reviews__item p {
         font-size: 14px;
+        line-height: 150%;
     }
 }
 
