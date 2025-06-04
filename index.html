@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_content container">
+            <div class="nav__top">
+                <a href="#" class="logo_wrapper">
+                    <img src="./img/logo.svg" alt="Лого">
+                </a>
+                <div class="link_container">
+                    <div class="social__links">
+                        <a href="#" class="social_link link_tg"></a>
+                         <a href="#" class="social_link link_vk"></a>
+                          <a href="#" class="social_link link_wh"></a>
+                    </div>
+                    <a href="tel:+78007079484" class="btn btn_secondary_wh">+7 (800) 707-94-84</a>
+                    <div class="btn btn_primary btn_call">Обратный звонок</div>
+                </div>
+                <div class="btn_burger_menu"></div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="nav__item">Рейсы</a></li>
+                    <li><a href="#" class="nav__item">Стоимость</a></li>
+                    <li><a href="#" class="nav__item">О нас</a></li>
+                    <li><a href="#" class="nav__item">Преимущества</a></li>
+                    <li><a href="#" class="nav__item">Частые вопросы</a></li>
+                    <li><a href="#" class="nav__item">Галерея</a></li>
+                    <li><a href="#" class="nav__item">Отзывы</a></li>
+                    <li><a href="#" class="nav__item">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile_menu container">
+            <div class="mobile_menu__top">
+                <div class="social__links">
+                        <a href="#" class="social_link link_tg"></a>
+                         <a href="#" class="social_link link_vk"></a>
+                          <a href="#" class="social_link link_wh"></a>
+                    </div>
+                    <a href="tel:+78007079484" class="link_tel">+7 (800) 707-94-84</a>
+
+            </div>
+            <nav class="nav_mobile">
+                <ul>
+                    <li><a href="#" class="nav__item">Рейсы</a></li>
+                    <li><a href="#" class="nav__item">Стоимость</a></li>
+                    <li><a href="#" class="nav__item">О нас</a></li>
+                    <li><a href="#" class="nav__item">Преимущества</a></li>
+                    <li><a href="#" class="nav__item">Частые вопросы</a></li>
+                    <li><a href="#" class="nav__item">Галерея</a></li>
+                    <li><a href="#" class="nav__item">Отзывы</a></li>
+                    <li><a href="#" class="nav__item">Контакты</a></li>
+                    <li>
+                         <div class="btn btn_primary btn_call">Обратный звонок</div>
+                    </li>
+                    <li>
+                        2025
+                    </li>
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>Разработано ООО “Maxocom”</li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section_order">
+            <div class="container">
+                <div class="section_order__content">
+                    <div class="order__result">
+                        <div class="order__result_title">Заказ</div>
+                        <div class="order__result__items">
+                            <div class="order__result_item order__result_item_date">
+                                <input type="text" id="dateInput" class="date-input" readonly
+                                    placeholder="Выберите дату">
+                            </div>
+                            <div class="order__result_item order__result_item_location hidden">
+                                <div class="order__result_item_info">
+                                    <span id="order_route_result">
+                                        Анапа-Геленджик
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_ticket ticket_adult_res hidden">
+                                <div class="order__result_item_info">
+                                    <span>
+                                        Пассажир 1
+                                    </span>
+                                    <p>
+                                        Взрослый
+                                    </p>
+                                </div>
+                                <div class="order__ticket_count">
+                                    1
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_ticket ticket_adult_res_vip hidden">
+                                <div class="order__result_item_info">
+                                    <span>
+                                        Пассажир 1 VIP
+                                    </span>
+                                    <p>
+                                        Взрослый
+                                    </p>
+                                </div>
+                                <div class="order__ticket_count">
+                                    1
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_ticket ticket_child_free_res hidden">
+                                <div class="order__result_item_info">
+                                    <span>
+                                        Пассажир 2
+                                    </span>
+                                    <p>
+                                        Детский (от 0 до 2 лет)
+                                    </p>
+                                </div>
+                                <div class="order__ticket_count">
+                                    1
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_ticket ticket_child_res hidden">
+                                <div class="order__result_item_info">
+                                    <span>
+                                        Пассажир 3
+                                    </span>
+                                    <p>
+                                        Детский (от 2 до 12 лет)
+                                    </p>
+                                </div>
+                                <div class="order__ticket_count">
+                                    1
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_time hidden">
+                                <div class="order__result_item_info">
+                                    <span id="order_result_time">
+                                        14:00-15:45
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order__result_item order__result_item_place hidden">
+                                <div class="order__result_item_info">
+                                    <span>
+                                        Мест: 2
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__result__price">
+                            <span>
+                                Итого
+                            </span>
+                            <span>
+                                0 ₽
+                            </span>
+                        </div>
+                        <div class="order__result__btn_wrapper">
+                            <button class="order_btn btn_primary disabled">
+                                Перейти к оплате
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="order__wrapper">
+                        <div class="mobile_title__order">Оформление заказа</div>
+                        <div class="order__wrapper_top">
+                            <div class="order_tab active">
+                                Покупка
+                            </div>
+                            <div class="order_tab">
+                                Доставка
+                            </div>
+                            <div class="order_tab">
+                                Данные
+                            </div>
+                            <div class="order_tab">
+                                Оплата
+                            </div>
+                        </div>
+                        <div class="order__container">
+                            <div class="order__options_content order__option_pay  ">
+                                <div class="order__option order__option_calendar">
+                                    <div class="order__options_title">
+                                        1. Выберите дату поездки
+                                    </div>
+                                    <div class="order_mobile_top">
+                                        <span>
+                                            Дата поездки
+                                        </span>
+                                    </div>
+                                    <div id="calendar" class="calendar">
+                                        <div class="calendar-header">
+                                            <button class="nav-btn" id="prevMonthBtn">❮</button>
+                                            <span class="calendar-title" id="currentMonthYear"></span>
+                                            <button class="nav-btn" id="nextMonthBtn">❯</button>
+                                        </div>
+
+                                        <div class="days-of-week" id="daysOfWeek"></div>
+                                        <div class="days-grid" id="daysGrid"></div>
+                                    </div>
+                                </div>
+                                <div class="order__option order__option_route hidden">
+                                    <div class="order__options_title">
+                                        2. Выберите маршрут
+                                    </div>
+                                    <div class="order_mobile_top">
+                                        <span>
+                                            Маршрут
+                                        </span>
+                                    </div>
+                                    <div class="order__option_route_items">
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Анапа-Геленджик">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Анапа
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Геленджик-Лазаревское">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Лазаревское
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Сочи-Лазаревское">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Сочи
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Лазаревское
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Сочи-Туапсе">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Сочи
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Туапсе
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Анапа-Сочи">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Анапа
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Сочи
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Сочи-Анапа">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Сочи
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Анапа
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Туапсе-Геленджик">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Туапсе
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Геленджик-Анапа">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Анапа
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Геленджик-Туапсе">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Туапсе
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Лазаревское-Тупасе">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Лазаревское
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Тупасе
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Геленджик-Сочи">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Сочи
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="route_item">
+                                            <input type="radio" name="route" value="Анапа-Геленджик">
+                                            <div class="radio_marker"></div>
+                                            <div class="route_item__info_wrapper">
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        Анапа
+                                                    </span>
+                                                </div>
+                                                <div class="route_item__img"></div>
+                                                <div class="route_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        Геленджик
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="order__option order__option_trip hidden">
+                                    <div class="order__options_title">
+                                        3. Выберите рейс
+                                    </div>
+                                    <div class="order_mobile_top">
+                                        <span>
+                                            Рейс
+                                        </span>
+                                    </div>
+                                    <div class="order__option_trip_items">
+                                        <label class="trip_item">
+                                            <input type="radio" name="trip" value="14:00-15:45">
+                                            <div class="radio_marker"></div>
+                                            <div class="trip_item__info_wrapper">
+                                                <div class="trip_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        14:00
+                                                    </span>
+                                                </div>
+                                                <div class="trip_item__distance">
+                                                    1 часа 45 минут в пути
+                                                </div>
+                                                <div class="trip_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        15:45
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="trip_item">
+                                            <input type="radio" name="trip" value="16:00-17:45">
+                                            <div class="radio_marker"></div>
+                                            <div class="trip_item__info_wrapper">
+                                                <div class="trip_item__info">
+                                                    <span>
+                                                        Отправление
+                                                    </span>
+                                                    <span>
+                                                        16:00
+                                                    </span>
+                                                </div>
+                                                <div class="trip_item__distance">
+                                                    1 часа 45 минут в пути
+                                                </div>
+                                                <div class="trip_item__info">
+                                                    <span>
+                                                        Прибытие
+                                                    </span>
+                                                    <span>
+                                                        17:45
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order__option order__option_ticket hidden">
+                                    <div class="order__options_title">
+                                        4. Выберите тариф и количество билетов
+                                    </div>
+                                    <div class="order_mobile_top">
+                                        <span>
+                                            Тариф и билеты
+                                        </span>
+                                    </div>
+                                    <div class="order_ticket__content">
+                                        <div class="order_ticket__tariffs">
+                                            <label class="tariffs__item">
+                                                <div class="tariffs__item__wrapper">
+                                                    <input type="radio" name="tariff" value="standart" checked>
+                                                    <div class="radio_marker"></div>
+                                                    <div class="tariffs__item_info">
+                                                        <span>
+                                                            Класс проезда Стандарт
+                                                        </span>
+                                                        <p>
+                                                            Место в средней части салона. Есть льготные детские тарифы
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </label>
+                                            <div class="order_ticket__container" data-tarif="standart">
+                                                <div class="order_ticket__wrapper">
+                                                    <div class="order_ticket ticket_adult" data-price="2500">
+                                                        <div class="order_ticket__info">
+                                                            <div class="order_ticket_top">
+                                                                <span>Взрослый</span>
+                                                                <span>2500₽</span>
+                                                            </div>
+                                                            <p>
+                                                                1 поездка в салоне стандартного класса с гарантированным
+                                                                посадочным местом. Билет действителен на дату, рейс и
+                                                                направление, указанные в проездном документе.
+                                                            </p>
+                                                            <p class="order_ticket_hint">
+                                                                К каждому Взрослому билету вы можете добавить один
+                                                                бесплатный
+                                                                билет на ребенка в возрасте от 0 до 2 лет.
+                                                            </p>
+                                                        </div>
+                                                        <div class="order_ticket__counter">
+                                                            <div class="order_ticket__counter-minus"></div>
+                                                            <div class="order_ticket__counter-count">0</div>
+                                                            <div class="order_ticket__counter-plus"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_ticket ticket_child_free" data-price="0">
+                                                        <div class="order_ticket__info">
+                                                            <div class="order_ticket_top">
+                                                                <span>Детский (от 0 до 2 лет)</span>
+                                                                <span>0₽</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order_ticket__counter">
+                                                            <div class="order_ticket__counter-minus"></div>
+                                                            <div class="order_ticket__counter-count">0</div>
+                                                            <div class="order_ticket__counter-plus"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order_ticket__wrapper">
+                                                    <div class="order_ticket ticket_child" data-price="1500">
+                                                        <div class="order_ticket__info">
+                                                            <div class="order_ticket_top">
+                                                                <span>Детский (от 2 до 12 лет)</span>
+                                                                <span>1500₽</span>
+                                                            </div>
+                                                            <p>
+                                                                1 поездка в салоне стандартного класса с гарантированным
+                                                                посадочным местом. Билет действителен на дату, рейс и
+                                                                направление, указанные в проездном документе.
+                                                            </p>
+                                                        </div>
+                                                        <div class="order_ticket__counter">
+                                                            <div class="order_ticket__counter-minus"></div>
+                                                            <div class="order_ticket__counter-count">0</div>
+                                                            <div class="order_ticket__counter-plus"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="tariffs__item">
+                                                <div class="tariffs__item__wrapper">
+                                                    <input type="radio" name="tariff" value="vip">
+                                                    <div class="radio_marker"></div>
+                                                    <div class="tariffs__item_info">
+                                                        <span>
+                                                            Класс проезда VIP
+                                                        </span>
+                                                        <p>
+                                                            Место в любой части салона. Есть льготные детские тарифы
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </label>
+                                            <div class="order_ticket__container" data-tarif="vip">
+                                                <div class="order_ticket__wrapper">
+                                                    <div class="order_ticket ticket_adult_vip" data-price="8500">
+                                                        <div class="order_ticket__info">
+                                                            <div class="order_ticket_top">
+                                                                <span>Взрослый</span>
+                                                                <span>8500₽</span>
+                                                            </div>
+                                                            <p>
+                                                                1 поездка в салоне стандартного класса с гарантированным
+                                                                посадочным местом. Билет действителен на дату, рейс и
+                                                                направление, указанные в проездном документе.
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="order_ticket__counter">
+                                                            <div class="order_ticket__counter-minus"></div>
+                                                            <div class="order_ticket__counter-count">0</div>
+                                                            <div class="order_ticket__counter-plus"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="order__options_content order__option_delivery hidden">
+                                <div class="order__option order__option_dilevery">
+                                    <div class="order__options_title">
+                                        Укажите e-mail и номер телефона для отправки билета
+                                    </div>
+                                    <form class="form_delivery">
+
+                                        <div class="inputs_container">
+                                            <label class="label_input">
+                                                <input type="email" name="deliver_email" required placeholder="E-mail">
+                                                <div class="input_error">
+                                                    Введите email в правильном формате
+                                                </div>
+                                            </label>
+                                            <label class="label_input">
+                                                <input type="tel" name="deliver_phone" required
+                                                    placeholder="+7(___)___-__-__">
+                                                <div class="input_error">
+                                                    Введите номер в правильном формате
+                                                </div>
+                                            </label>
+
+                                        </div>
+                                        <button class="btn_primary">К данным</button>
+                                        <label class="politick_checkbox">
+                                            <input type="checkbox" name="politicks" required>
+                                            <div class="radio_marker"></div>
+                                            <span>
+                                                Я ознакомлен и согласен с политикой <a href="#">обработки персональных
+                                                    данных</a>
+                                            </span>
+                                        </label>
+                                    </form>
+
+
+                                </div>
+                            </div>
+                            <div class="order__options_content order__option_data hidden">
+                                <div class="order__option order__option_dilevery">
+                                    <div class="order__options_title">
+                                        Введите паспортные данные каждого пассажира
+                                    </div>
+                                    <form class="form_ticket">
+                                        <div class="form_ticket_item">
+                                            <div class="form_ticket__title open">
+                                                <span>
+                                                    Билет 1
+                                                </span>
+                                                <p>
+                                                    Взрослый
+                                                </p>
+                                            </div>
+                                            <div class="form_ticket__input">
+                                                <label class="label_input">
+                                                    <input type="text" name="surname" required placeholder="Фамилия">
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="name" required placeholder="Имя">
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="nameFather" required
+                                                        placeholder="Отчество">
+                                                </label>
+
+
+                                                <div class="form_ticket__input_wrapper">
+                                                    <label class="label_input">
+                                                        <select name="sex" aria-placeholder="Пол" required>
+                                                            <option value="" selected disabled>Пол</option>
+                                                            <option value="male">Муж</option>
+                                                            <option value="female">Жен</option>
+                                                        </select>
+                                                    </label>
+
+                                                    <label class="label_input">
+                                                        <input type="text" name="date" required
+                                                            placeholder="Дата рождения">
+                                                        <div class="input_error">
+                                                            Введите дату в правильном формате (дд.мм.гг)
+                                                        </div>
+                                                    </label>
+
+                                                </div>
+                                                <label class="label_input">
+                                                    <select name="document" required>
+                                                        <option value="" selected disabled>Документ</option>
+                                                        <option value="male">Паспорт</option>
+                                                        <option value="female">Снилс</option>
+                                                    </select>
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="pasport" required
+                                                        placeholder="Серия и номер">
+                                                    <div class="input_error">
+                                                        Введите 10 цифр серии и номера паспорта. Для безопасности часть
+                                                        цифр будет скрыта.
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form_ticket_item">
+                                            <div class="form_ticket__title">
+                                                <span>
+                                                    Билет 2
+                                                </span>
+                                                <p>
+                                                    Взрослый
+                                                </p>
+                                            </div>
+                                            <div class="form_ticket__input">
+                                                <label class="label_input">
+                                                    <input type="text" name="surname" required placeholder="Фамилия">
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="name" required placeholder="Имя">
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="nameFather" required
+                                                        placeholder="Отчество">
+                                                </label>
+
+
+                                                <div class="form_ticket__input_wrapper">
+                                                    <label class="label_input">
+                                                        <select name="sex" aria-placeholder="Пол" required>
+                                                            <option value="" selected disabled>Пол</option>
+                                                            <option value="male">Муж</option>
+                                                            <option value="female">Жен</option>
+                                                        </select>
+                                                    </label>
+
+                                                    <label class="label_input">
+                                                        <input type="text" name="date" required
+                                                            placeholder="Дата рождения">
+                                                        <div class="input_error">
+                                                            Введите дату в правильном формате (дд.мм.гг)
+                                                        </div>
+                                                    </label>
+
+                                                </div>
+                                                <label class="label_input">
+                                                    <select name="document" required>
+                                                        <option value="" selected disabled>Документ</option>
+                                                        <option value="male">Паспорт</option>
+                                                        <option value="female">Снилс</option>
+                                                    </select>
+                                                </label>
+
+                                                <label class="label_input">
+                                                    <input type="text" name="pasport" required
+                                                        placeholder="Серия и номер">
+                                                    <div class="input_error">
+                                                        Введите 10 цифр серии и номера паспорта. Для безопасности часть
+                                                        цифр будет скрыта.
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form_ticket__btn">
+                                            <button class="btn_primary">Перейти к оплате </button>
+                                            <button class="btn_secondary btn_spb">Перейти к оплате </button>
+                                        </div>
+                                        <label class="politick_checkbox">
+                                            <input type="checkbox" name="politicks" required>
+                                            <div class="radio_marker"></div>
+                                            <span>
+                                                Нажимая кнопку "Перейти к оплате", Вы даете свое согласие на
+                                                обработку <a href="#">персональных данных</a> и соглашаетесь с
+                                                условиями страхования
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="order__options_content order__option_payment hidden">
+                               <div class="order__option order__option_dilevery">
+                                    <div class="order__options_title">
+                                       Оплата прошла
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/header.js"></script>
+</body>
+
+</html>
