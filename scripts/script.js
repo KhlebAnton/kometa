@@ -508,7 +508,7 @@ function nextTab() {
             break;
         case 3:
             alert('На отправку оплаты');
-             orderOptionContents.forEach(content => {
+            orderOptionContents.forEach(content => {
                 if (content.classList.contains('order__option_payment')) {
                     content.classList.remove('hidden')
                 }
@@ -822,12 +822,13 @@ const ticketTitles = document.querySelectorAll('.form_ticket__title');
 
 // Добавляем обработчик клика к каждому элементу
 ticketTitles.forEach(title => {
-  title.addEventListener('click', function() {
-    
-    document.querySelectorAll('.form_ticket__title').forEach(el => {
-      el.classList.remove('open');
+    title.addEventListener('click', function () {
+
+        document.querySelectorAll('.form_ticket__title').forEach(el => {
+            el.classList.remove('open');
+        });
+        this.classList.add('open');
+
     });
-    this.classList.add('open');
-    
-  });
 });
+
