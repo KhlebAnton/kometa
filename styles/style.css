@@ -1731,6 +1731,7 @@ input[type='email'] {
     min-width: 120px;
     width: 100%;
     font-size: 18px;
+    background-color: transparent;
 }
 
 input[type='date']:focus,
