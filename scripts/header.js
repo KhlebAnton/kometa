@@ -11,7 +11,14 @@ btnBurger.addEventListener('click', () => {
     body.classList.toggle('no-scrolled');
 
 });
+mobMenu.addEventListener('click', () => {
+    btnBurger.classList.toggle('open');
+    mobMenu.classList.toggle('open');
+    
+    html.classList.toggle('no-scrolled');
+    body.classList.toggle('no-scrolled');
 
+});
 
 function toggleScroll(enable) {
     if (enable) {
@@ -34,9 +41,8 @@ openModalButtons.forEach(button => {
     button.addEventListener('click', function (e) {
         e.preventDefault();
         modal.classList.add('open');
-        btnBurger.classList.remove('open');
-    mobMenu.classList.remove('open');
-        toggleScroll(false)
+       
+        toggleScroll(true)
     });
 });
 
