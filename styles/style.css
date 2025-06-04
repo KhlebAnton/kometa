@@ -3076,4 +3076,7 @@ a.btn_primary {
         width: 18px;
         height: 18px;
     }
+     .reviews__item p {
+        font-size: 14px !important;
+    }
 }
