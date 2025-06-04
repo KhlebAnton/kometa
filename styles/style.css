@@ -1284,6 +1284,35 @@ input[type='email']:focus {
     padding-left: 1.2em;
      color: #000000;
 }
+.section_404 {
+    min-height: 50vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 174px;
+    text-align: center;
+}
+.section_404__content {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section_404__content span {
+   font-weight: 500;
+   font-size: 48px;
+   line-height: 100%;
+}
+.section_404__content img {
+    max-width: 645px;
+    width: 100%;
+}
+a.btn_primary {
+    text-decoration: none;
+    max-width: 223px;
+    width: 100%;
+}
 @media (max-width:1300px) {
     .container {
         padding: 0 48px;
@@ -1641,6 +1670,20 @@ input[type='email']:focus {
         .modal_form__inputs,
     .modal_form {
         gap: 16px;
+    }
+    .section_404__content img {
+        max-width: 419px;
+    }
+    .section_404__content span {
+        font-size: 20px;
+    }
+   .section_404__content a.btn_primary {
+        max-width: none;
+    }
+    .section_404__content {
+        width: 100%;
+        padding: 16px;
+        max-width: 672px;
     }
 }
 
